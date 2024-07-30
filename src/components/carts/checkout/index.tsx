@@ -83,7 +83,7 @@ const Checkout = () => {
     data.subTotal = totalPrice;
     // data.productId = productItem.map((id:any)=>id._id === productItem._id)
     console.log(data);
-    fetch('http://localhost:5000/api/order/order', {
+    fetch('https://phone-ecommerce-server.vercel.app/api/order/order', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(data),
