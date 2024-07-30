@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 import Link from 'next/link';
 import { useLoginMutation } from '@/components/redux/features/api/auth';
 import { setUser } from '@/components/redux/store';
-import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation';
 
 interface LoginForm {
   email: string;
@@ -14,7 +14,7 @@ interface LoginForm {
 }
 
 const Loginpage: React.FC = () => {
-  const router = useRouter()
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -26,9 +26,9 @@ const Loginpage: React.FC = () => {
   const onSubmit: SubmitHandler<LoginForm> = async data => {
     const result = await login(data);
     if (!result.error) {
-      dispatch(setUser(result.data))
+      dispatch(setUser(result.data));
     }
-    router.push("/")
+    router.push('/');
     Swal.fire({
       position: 'top-end',
       icon: 'success',
@@ -36,7 +36,6 @@ const Loginpage: React.FC = () => {
       showConfirmButton: false,
       timer: 1500,
     });
-    
   };
 
   return (
@@ -76,7 +75,7 @@ const Loginpage: React.FC = () => {
           {isLoading ? 'Loading...' : 'Login'}
         </button>
         <p className="text-center font-normal text-base">
-          Don't have an account?{' '}
+          Don&apos;t have an account?{' '}
           <span className="text-red-900 hover:underline">
             <Link href="/register">Register</Link>
           </span>
