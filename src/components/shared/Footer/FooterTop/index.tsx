@@ -10,14 +10,14 @@ import { CiInstagram } from 'react-icons/ci';
 import Link from 'next/link';
 const FooterTop = () => {
   return (
-    <div className="bg-[#fff] p-10">
+    <div className="bg-blue-400 p-10">
       <div
         data-aos="fade-up"
         className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10"
       >
         <div>
           <h2 className="text-2xl font-bold">
-            <span className="text-[#fd3d57]">RAF</span>CART
+            <span className="text-[#fd3d57]">phone</span>Hunter
           </h2>
           <p className="my-3 text-sm text-justify">
             Lorem ipsum, or lipsum as it is sometimes kno wn, is dummy text used
@@ -71,12 +71,12 @@ const FooterTop = () => {
               <span className="mt-1">
                 <FaMapMarkerAlt />
               </span>
-              <p className="text-justify">Mohakhali, Dhaka, Bangladesh</p>
+              <p className="text-justify">Badda Dhaka, Bangladesh</p>
             </li>
             <li className="flex gap-2 justify-start items-start my-3 text-sm">
               <span className="mt-1">
                 <FaPhoneAlt />
-                <p>o17383644</p>
+                <p>01764169290</p>
               </span>
              
             </li>
@@ -84,7 +84,7 @@ const FooterTop = () => {
               <span className="mt-1">
                 <CiMail />
               </span>
-              <p>jakirhossain</p>
+              <p>jakirhossainpab0@gmail.com</p>
             </li>
           </ul>
           <div className="flex gap-2">

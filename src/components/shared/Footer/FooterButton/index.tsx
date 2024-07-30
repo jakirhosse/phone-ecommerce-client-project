@@ -3,9 +3,9 @@ import React from 'react';
 
 const FooterBottom = () => {
   return (
-    <div className="bg-[#18181b] text-white px-12">
+    <div className="bg-blue-400 text-white px-12">
       <div className="lg:flex md:flex w-full gap-10  justify-between items-center py-3">
-        <p>&copy; RAFCART - All Rights Reserved</p>
+        <p>&copy; Phone-Hunter - All Rights Reserved</p>
         <span className="flex lg:gap-6 md:gap-5 gap-4 jusfity-center items-center">
           <Image
             src="https://i.ibb.co/L0fLGLN/maestro.png"
